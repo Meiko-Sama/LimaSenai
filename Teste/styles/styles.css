@@ -4,6 +4,89 @@
   margin: 0;
 }
 
+body {
+  height: 100vh;
+  background-color: aliceblue;
+}
+
+.cards {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template: 25% auto 15% / 1fr 1fr 1fr 1fr;
+
+  gap: 20px;
+}
+
+.cards .card:nth-child(1) {
+  background-color: rgb(13, 77, 145);
+  grid-column: 1/3;
+}
+
+.cards .card:nth-child(2) {
+  background-color: rgb(34, 111, 193);
+  grid-column: 3/5;
+}
+
+.cards .card:nth-child(3) {
+  background-color: rgb(65, 139, 218);
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.cards .card:nth-child(4) {
+  background-color: rgb(88, 157, 231);
+  grid-column: 2/5;
+  grid-row: 2/3;
+}
+
+.cards .card:nth-child(5) {
+  background-color: rgb(130, 190, 255);
+
+  grid-column: 1/5;
+  grid-row: 3/3;
+}
+
+/* EXEMPLO 4 */
+
+/* .cards {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template:
+    "logo logo header header" 25% "article main main main" 1fr
+    "footer footer footer footer" 15% / 1fr 1fr 1fr 1fr;
+
+  gap: 20px;
+}
+
+.cards .card:nth-child(1) {
+  background-color: rgb(42, 42, 42);
+  grid-area: logo;
+}
+
+.cards .card:nth-child(2) {
+  background-color: rgb(106, 106, 106);
+  grid-area: header;
+}
+
+.cards .card:nth-child(3) {
+  background-color: rgb(189, 189, 189);
+  grid-area: article;
+}
+
+.cards .card:nth-child(4) {
+  background-color: rgb(81, 81, 81);
+  grid-area: main;
+}
+
+.cards .card:nth-child(5) {
+  background-color: rgb(0, 0, 0);
+  grid-area: footer;
+} */
+
 /* EXEMPLO 3 */
 
 /* body {
