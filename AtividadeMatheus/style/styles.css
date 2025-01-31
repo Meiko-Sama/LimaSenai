@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* DESIGN 1 */
+
+body {
+  background-color: rgb(50, 50, 50);
+  height: 100vh;
+}
+
+.cards {
+  height: 100%;
+  width: 100%;
+
+  gap: 20px;
+
+  display: grid;
+  grid-template: 50% 50%/ 1fr 1fr 1fr;
+}
+
+.cards .card:nth-child(1) {
+  background-color: rgb(221, 133, 60);
+  grid-column: 1/2;
+}
+
+.cards .card:nth-child(2) {
+  background-color: rgb(219, 150, 94);
+  grid-column: 2/3;
+}
+
+.cards .card:nth-child(3) {
+  background-color: rgb(237, 173, 120);
+  grid-column: 3/4;
+}
+
+.cards .card:nth-child(4) {
+  background-color: rgb(240, 194, 157);
+  grid-column: 1/2;
+}
+
+.cards .card:nth-child(5) {
+  background-color: rgb(255, 220, 191);
+  grid-column: 2/3;
+}
+
+.cards .card:nth-child(6) {
+  background-color: rgb(255, 234, 218);
+  grid-column: 3/4;
+}
+
+@media (max-width: 520px) {
+  body {
+    background-color: blue;
+  }
+
+  .cards {
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
+  }
+
+  .cards .card:nth-child(1),
+  .cards .card:nth-child(2),
+  .cards .card:nth-child(3),
+  .cards .card:nth-child(4),
+  .cards .card:nth-child(5),
+  .cards .card:nth-child(6) {
+    grid-column: auto;
+  }
+}
