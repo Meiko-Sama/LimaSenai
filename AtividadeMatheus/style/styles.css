@@ -53,7 +53,7 @@ body {
 
 @media (max-width: 520px) {
   body {
-    background-color: blue;
+    background-color: rgb(78, 78, 78);
   }
 
   .cards {
