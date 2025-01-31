@@ -4,6 +4,40 @@
   margin: 0;
 }
 
+/* EXEMPLO 3 */
+
+/* body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 500px;
+  height: 400px;
+  background-color: pink;
+
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(2, 100px);
+
+  justify-content: center;
+  align-content: center;
+
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  width: 50px;
+  height: 50px;
+  background-color: hotpink;
+} */
+
+/* EXEMPLO 2 */
+
 /* body {
   height: 100vh;
   background-color: pink;
@@ -31,6 +65,8 @@
   align-items: center;
   justify-content: center;
 } */
+
+/* EXEMPLO 1 */
 
 /* 
 body {
