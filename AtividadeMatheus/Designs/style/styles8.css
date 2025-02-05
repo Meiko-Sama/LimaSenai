@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(50, 50, 50);
+  height: 100vh;
+}
+
+.cards {
+  height: 100%;
+  width: 100%;
+
+  padding: 20px;
+  gap: 10px;
+
+  display: grid;
+  grid-template: 33% 33% 33% / 1fr 1fr 1fr;
+}
+
+.cards .card:nth-child(1) {
+  background-color: rgb(8, 45, 72);
+  grid-column: 1/4;
+}
+
+.cards .card:nth-child(2) {
+  background-color: rgb(17, 66, 101);
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+
+.cards .card:nth-child(3) {
+  background-color: rgb(32, 94, 139);
+  grid-column: 2/4;
+}
+
+.cards .card:nth-child(4) {
+  background-color: rgb(41, 110, 159);
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.cards .card:nth-child(5) {
+  background-color: rgb(70, 141, 193);
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+@media (max-width: 520px) {
+  body {
+    background-color: rgb(78, 78, 78);
+  }
+
+  .cards {
+    grid-template: 1fr 1fr 1fr 1fr 1fr/1fr;
+  }
+
+  .cards .card:nth-child(1),
+  .cards .card:nth-child(2),
+  .cards .card:nth-child(3),
+  .cards .card:nth-child(4),
+  .cards .card:nth-child(5) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
