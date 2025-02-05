@@ -16,6 +16,8 @@ body {
   grid-template: 33% 33% 33% / 1fr 1fr 1fr;
 }
 
+/* Configurações das cores e as posições que cada seção ocupará */
+
 .card:nth-child(1) {
   background-color: rgb(8, 45, 72);
   grid-column: 1/4;
@@ -42,6 +44,8 @@ body {
   grid-column: 3/4;
   grid-row: 3/4;
 }
+
+/* Deixando as seções responsivas  */
 
 @media (max-width: 520px) {
   body {
