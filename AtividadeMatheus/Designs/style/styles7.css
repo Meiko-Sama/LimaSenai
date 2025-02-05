@@ -7,10 +7,6 @@
 body {
   background-color: rgb(50, 50, 50);
   height: 100vh;
-}
-
-.cards {
-  height: 100%;
   width: 100%;
 
   padding: 20px;
@@ -20,50 +16,50 @@ body {
   grid-template: 33% 33% 33% / 1fr 1fr 1fr 1fr 1fr;
 }
 
-.cards .card:nth-child(1) {
+.card:nth-child(1) {
   background-color: rgb(208, 255, 242);
   grid-column: 1/2;
 }
 
-.cards .card:nth-child(2) {
+.card:nth-child(2) {
   background-color: rgb(169, 239, 219);
   grid-column: 2/3;
 }
 
-.cards .card:nth-child(3) {
+.card:nth-child(3) {
   background-color: rgb(135, 221, 197);
   grid-column: 3/4;
 }
 
-.cards .card:nth-child(4) {
+.card:nth-child(4) {
   background-color: rgb(105, 210, 180);
   grid-column: 4/5;
 }
 
-.cards .card:nth-child(5) {
+.card:nth-child(5) {
   background-color: rgb(79, 195, 162);
   grid-column: 5/6;
 }
 
-.cards .card:nth-child(6) {
+.card:nth-child(6) {
   background-color: rgb(61, 182, 148);
   grid-column: 1/2;
   grid-row: 2/3;
 }
 
-.cards .card:nth-child(7) {
+.card:nth-child(7) {
   background-color: rgb(43, 162, 129);
   grid-column: 2/3;
   grid-row: 2/3;
 }
 
-.cards .card:nth-child(8) {
+.card:nth-child(8) {
   background-color: rgb(43, 162, 129);
   grid-column: 3/6;
   grid-row: 2/3;
 }
 
-.cards .card:nth-child(9) {
+.card:nth-child(9) {
   background-color: rgb(24, 130, 100);
   grid-column: 1/6;
   grid-row: 3/4;
@@ -72,21 +68,18 @@ body {
 @media (max-width: 520px) {
   body {
     background-color: rgb(78, 78, 78);
-  }
-
-  .cards {
     grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
   }
 
-  .cards .card:nth-child(1),
-  .cards .card:nth-child(2),
-  .cards .card:nth-child(3),
-  .cards .card:nth-child(4),
-  .cards .card:nth-child(5),
-  .cards .card:nth-child(6),
-  .cards .card:nth-child(7),
-  .cards .card:nth-child(8),
-  .cards .card:nth-child(9) {
+  .card:nth-child(1),
+  .card:nth-child(2),
+  .card:nth-child(3),
+  .card:nth-child(4),
+  .card:nth-child(5),
+  .card:nth-child(6),
+  .card:nth-child(7),
+  .card:nth-child(8),
+  .card:nth-child(9) {
     grid-column: auto;
     grid-row: auto;
   }
