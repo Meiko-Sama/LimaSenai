@@ -1,8 +1,12 @@
+/* Configurações padrões */
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
+/* Configurações de tamanho, cor de fundo e como o DISPLAY GRID vai ser dividido */
 
 body {
   background-color: rgb(114, 213, 255);
@@ -84,7 +88,7 @@ body {
 @media (max-width: 520px) {
   body {
     background-color: rgb(78, 78, 78);
-    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr;
   }
 
   .card:nth-child(1),
