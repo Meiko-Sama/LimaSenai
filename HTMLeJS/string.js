@@ -41,3 +41,5 @@ console.log(palavras.reverse());
 
 // REMOVER TODOS OS ESPAÇOS//
 console.log(frase.replace(/\s+/g, ""));
+
+// SALVE //
