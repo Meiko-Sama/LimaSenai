@@ -36,7 +36,7 @@ let a = parseFloat(prompt("Digite o valor de A: "));
 let b = parseFloat(prompt("Digite o valor de B: "));
 
 function hipotenusa(a, b) {
-  let c = Math.sqrt(Math.pow(a, 3) + Math.pow(b, 3));
+  let c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2)); // Esse 2 serve para tirar a raiz da exponenciação do número
   console.log("O resultado da soma: ", c);
 }
 
@@ -48,7 +48,13 @@ let max = parseFloat(prompt("Digite um valor Máximo: "));
 let min = parseFloat(prompt("Digite um valor Minímo: "));
 
 function gerarNumeroAleatorio(min, max) {
-  console.log(Math.random() * (max - min + 1) + min);
+  if (max > min) {
+    console.log(Math.random() * (max - min + 1) + min);
+  } else {
+    console.log(
+      "O número mínimo é maior que o máximo, por favor digite novamente!"
+    );
+  }
 }
 
 gerarNumeroAleatorio(min, max);
