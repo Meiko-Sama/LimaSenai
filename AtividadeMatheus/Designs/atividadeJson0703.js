@@ -80,6 +80,19 @@ function contarLetras(frases) {
 
 contarLetras(frases);
 
+// COM REPLACE
+
+// let frases = prompt(
+//   "Digite uma frase ou palavra para que conte quantas letras existem nela: "
+// );
+// let regex = /\s+/g; //
+
+// function contarLetras(frases) {
+//   console.log(frases.replace(regex).length);
+// }
+
+// contarLetras(frases);
+
 // Inverter String: Desenvolva uma função inverterString(texto) que retorne o texto invertido.
 
 let frase = prompt("Por favor digite a frase que você quer inverter: ");
