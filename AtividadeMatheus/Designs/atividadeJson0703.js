@@ -1,12 +1,12 @@
 // Obter Data Atual: Crie uma função obterDataAtual() que retorne a data atual no formato DD/MM/AAAA.
 // Obter Hora Atual: Desenvolva uma função obterHoraAtual() que retorne a hora atual no formato HH:MM:SS.
 
-let frase = prompt(
+let deseja = prompt(
   "Deseja saber o horário e a data? Se sim digite (s) se não digite (n): "
 );
 let data = new Date();
 
-function obterDataAtual(frase, data) {
+function obterDataAtual(deseja, data) {
   console.log(
     `${data.getDate()}/0${data.getMonth() + 1}/${data.getFullYear()}`
   );
@@ -16,7 +16,7 @@ function obterDataAtual(frase, data) {
   return;
 }
 
-obterDataAtual(frase, data);
+obterDataAtual(deseja, data);
 
 // Hipotenusa: Desenvolva uma função calcularHipotenusa(a, b) que calcule a hipotenusa de um triângulo retângulo usando o Teorema de Pitágoras.
 
@@ -44,8 +44,8 @@ hipotenusa(a, b);
 
 // Número Aleatório: Crie uma função gerarNumeroAleatorio(min, max) que gere um número aleatório entre os valores min e max (inclusive).
 
-let max = prompt("Digite um valor Máximo: ");
-let min = prompt("Digite um valor Minímo: ");
+let max = parseFloat(prompt("Digite um valor Máximo: "));
+let min = parseFloat(prompt("Digite um valor Minímo: "));
 
 function gerarNumeroAleatorio(min, max) {
   console.log(Math.random() * (max - min + 1) + min);
@@ -66,3 +66,53 @@ function calcularFatorial(n) {
 }
 
 console.log(calcularFatorial(n));
+
+// Contar Letras: Crie uma função contarLetras(texto) que receba uma string e retorne o número de letras nela.
+
+let frases = prompt(
+  "Digite uma frase ou palavra para que conte quantas letras existem nela: "
+);
+let regex = /\S/g; //
+
+function contarLetras(frases) {
+  console.log(frases.split(regex).length - 1);
+}
+
+contarLetras(frases);
+
+// Inverter String: Desenvolva uma função inverterString(texto) que retorne o texto invertido.
+
+let frase = prompt("Por favor digite a frase que você quer inverter: ");
+let fraseInvertida = "";
+
+function invertePalavra(frase) {
+  for (let i = frase.length - 1; i >= 0; i--) {
+    fraseInvertida = fraseInvertida + frase[i];
+  }
+  return fraseInvertida;
+}
+
+console.log(invertePalavra(frase));
+
+function revStringJSON(palavra) {
+  return { parametro: palavra, resultado: invertePalavra(frase) };
+}
+
+console.log(revStringJSON(frase));
+
+// Verificar Palíndromo: Crie uma função ehPalindromo(texto) que verifique se uma string é um palíndromo, ignorando espaços e diferenças entre maiúsculas e minúsculas.
+
+let texto = prompt("Digite a frase para verificar se é um palíndromo: ");
+
+function ehPalindromo(texto) {
+  if (
+    texto.split("").reverse().join("").toLowerCase().replace(/\s+/g, "") ===
+    texto.toLowerCase().replace(/\s+/g, "")
+  ) {
+    console.log("A palavra é um palíndromo!");
+  } else {
+    console.log("A palavra não é um palíndromo!");
+  }
+}
+
+ehPalindromo(texto);
