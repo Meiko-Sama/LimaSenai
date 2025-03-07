@@ -49,7 +49,7 @@ let min = parseFloat(prompt("Digite um valor Minímo: "));
 
 function gerarNumeroAleatorio(min, max) {
   if (max > min) {
-    console.log(Math.random() * (max - min + 1) + min);
+    console.log(Math.random() * (max - min) + min);
   } else {
     console.log(
       "O número mínimo é maior que o máximo, por favor digite novamente!"
@@ -65,6 +65,9 @@ let n = parseInt(prompt("Digite o valor que você desea fatoriar: "));
 let resultado = 1;
 
 function calcularFatorial(n) {
+  if (n < 1) {
+    console.log("O número é menor que 1");
+  }
   for (let i = n; i > 0; i--) {
     resultado *= i;
   }
