@@ -113,6 +113,16 @@ function revStringJSON(palavra) {
 
 console.log(revStringJSON(frase));
 
+// Reverse sem o FOR
+
+// let frase = prompt("Digite a farse que voce quer inverter: ");
+
+// function inverterString(frase) {
+//     console.log(frase.split('').reverse().join(""));
+// }
+
+// inverterString(frase);
+
 // Verificar Palíndromo: Crie uma função ehPalindromo(texto) que verifique se uma string é um palíndromo, ignorando espaços e diferenças entre maiúsculas e minúsculas.
 
 let texto = prompt("Digite a frase para verificar se é um palíndromo: ");
